@@ -146,13 +146,23 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="258">
-                                                                <field name="NUM">80</field>
+                                                                <field name="NUM">90</field>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
                                                         <statement name="DO0">
-                                                          <block type="movement_left" id="213"></block>
+                                                          <block type="movement_left" id="213">
+                                                            <next>
+                                                              <block type="robot_delay" id="262" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="263">
+                                                                    <field name="NUM">100</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
                                                         </statement>
                                                         <value name="IF1">
                                                           <block type="logic_compare" id="189" inline="true">
@@ -164,7 +174,7 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="203">
-                                                                <field name="NUM">40</field>
+                                                                <field name="NUM">50</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -182,7 +192,7 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="216">
-                                                                <field name="NUM">80</field>
+                                                                <field name="NUM">90</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -191,7 +201,17 @@
                                                           <block type="movement_right" id="226"></block>
                                                         </statement>
                                                         <statement name="ELSE">
-                                                          <block type="movement_forward" id="236"></block>
+                                                          <block type="movement_forward" id="236">
+                                                            <next>
+                                                              <block type="robot_delay" id="260" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="261">
+                                                                    <field name="NUM">100</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
                                                         </statement>
                                                         <next>
                                                           <block type="robot_delay" id="238" inline="true">
