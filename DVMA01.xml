@@ -180,7 +180,17 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
-                                                          <block type="movement_left" id="259"></block>
+                                                          <block type="movement_left" id="259">
+                                                            <next>
+                                                              <block type="robot_delay" id="264" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="265">
+                                                                    <field name="NUM">100</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
                                                         </statement>
                                                         <value name="IF2">
                                                           <block type="logic_compare" id="214" inline="true">
@@ -206,7 +216,7 @@
                                                               <block type="robot_delay" id="260" inline="true">
                                                                 <value name="DELAY">
                                                                   <block type="math_number" id="261">
-                                                                    <field name="NUM">100</field>
+                                                                    <field name="NUM">200</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
