@@ -285,4 +285,7 @@
       </block>
     </next>
   </block>
+  <block type="variables_set" id="64" inline="true" x="388" y="123">
+    <field name="VAR">item</field>
+  </block>
 </xml>
