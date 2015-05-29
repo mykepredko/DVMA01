@@ -135,8 +135,26 @@
                                                     </value>
                                                     <next>
                                                       <block type="controls_if" id="177" inline="false">
-                                                        <mutation elseif="1" else="1"></mutation>
+                                                        <mutation elseif="2" else="1"></mutation>
                                                         <value name="IF0">
+                                                          <block type="logic_compare" id="256" inline="true">
+                                                            <field name="OP">LT</field>
+                                                            <value name="A">
+                                                              <block type="sensor_object" id="257">
+                                                                <field name="OBJECT">RIGHTFRONT</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="258">
+                                                                <field name="NUM">80</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="movement_left" id="213"></block>
+                                                        </statement>
+                                                        <value name="IF1">
                                                           <block type="logic_compare" id="189" inline="true">
                                                             <field name="OP">LT</field>
                                                             <value name="A">
@@ -151,10 +169,10 @@
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <statement name="DO0">
-                                                          <block type="movement_left" id="213"></block>
+                                                        <statement name="DO1">
+                                                          <block type="movement_left" id="259"></block>
                                                         </statement>
-                                                        <value name="IF1">
+                                                        <value name="IF2">
                                                           <block type="logic_compare" id="214" inline="true">
                                                             <field name="OP">GT</field>
                                                             <value name="A">
@@ -169,7 +187,7 @@
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <statement name="DO1">
+                                                        <statement name="DO2">
                                                           <block type="movement_right" id="226"></block>
                                                         </statement>
                                                         <statement name="ELSE">
