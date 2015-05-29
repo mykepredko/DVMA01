@@ -130,7 +130,7 @@
                                                   <block type="oled_drawnumber" id="169" inline="true">
                                                     <value name="NUMBER">
                                                       <block type="sensor_object" id="170">
-                                                        <field name="OBJECT">RIGHTSIDE</field>
+                                                        <field name="OBJECT">LEFTSIDE</field>
                                                       </block>
                                                     </value>
                                                     <next>
@@ -141,7 +141,7 @@
                                                             <field name="OP">LT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="257">
-                                                                <field name="OBJECT">RIGHTFRONT</field>
+                                                                <field name="OBJECT">LEFTFRONT</field>
                                                               </block>
                                                             </value>
                                                             <value name="B">
@@ -152,7 +152,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO0">
-                                                          <block type="movement_left" id="213">
+                                                          <block type="movement_right" id="226">
                                                             <next>
                                                               <block type="robot_delay" id="262" inline="true">
                                                                 <value name="DELAY">
@@ -169,7 +169,7 @@
                                                             <field name="OP">LT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="196">
-                                                                <field name="OBJECT">RIGHTSIDE</field>
+                                                                <field name="OBJECT">LEFTSIDE</field>
                                                               </block>
                                                             </value>
                                                             <value name="B">
@@ -180,7 +180,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
-                                                          <block type="movement_left" id="259">
+                                                          <block type="movement_right" id="267">
                                                             <next>
                                                               <block type="robot_delay" id="264" inline="true">
                                                                 <value name="DELAY">
@@ -197,7 +197,7 @@
                                                             <field name="OP">GT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="215">
-                                                                <field name="OBJECT">RIGHTSIDE</field>
+                                                                <field name="OBJECT">LEFTSIDE</field>
                                                               </block>
                                                             </value>
                                                             <value name="B">
@@ -208,7 +208,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO2">
-                                                          <block type="movement_right" id="226"></block>
+                                                          <block type="movement_left" id="213"></block>
                                                         </statement>
                                                         <statement name="ELSE">
                                                           <block type="movement_forward" id="236">
